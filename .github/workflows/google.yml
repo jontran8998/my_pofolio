@@ -9,7 +9,7 @@ env:
   SERVICE_NGINX_TECH: tech
   SERVICE_NGINX_DEV: dev
   SERVICE_BACKEND: backend
-#   IMAGE_NGINX_TECH: ${{ secrets.GKE_REGISTRY_HOSTNAME }}/${{ secrets.GKE_PROJECT }}/tech:${{ github.sha }}
+  IMAGE_NGINX_TECH: ${{ secrets.GKE_REGISTRY_HOSTNAME }}/${{ secrets.GKE_PROJECT }}/tech:${{ github.sha }}
   IMAGE_NGINX_DEV: ${{ secrets.GKE_REGISTRY_HOSTNAME }}/${{ secrets.GKE_PROJECT }}/dev:${{ github.sha }}
   IMAGE_BACKEND: ${{ secrets.GKE_REGISTRY_HOSTNAME }}/${{ secrets.GKE_PROJECT }}/backend:${{ github.sha }}
   GKE_ZONE: us-central1
