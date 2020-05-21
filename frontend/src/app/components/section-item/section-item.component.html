@@ -1,0 +1,36 @@
+<ng-container *ngFor="let singleItem of sortedItems">
+    <div class="item" [attr.id]="getRefIdItem(singleItem.id)">
+        <div class="iteminfo">
+            <div class="iteminfoleft">
+                <a href="{{ singleItem.organizationUrl }}" class="itemtittlelink w-inline-block">
+                    <h1 class="itemtittle">{{ singleItem.title }}</h1>
+                </a>
+                <div class="iteminfowrapper" *ngIf="singleItem.organization||singleItem.date">
+                    <a href="{{ singleItem.organizationUrl }}" class="itemcompany when-link">{{ singleItem.organization }}</a>
+                    <div class="itemdate">{{ singleItem.date }}</div>
+                </div>
+                <div class="itemlocation" *ngIf="singleItem.location">{{ singleItem.location }}</div>
+            </div>
+            <ng-container *ngIf="singleItem.image">
+                <img src="assets/db/{{ singleItem.image }}" width="68" alt="{{ singleItem.organization }}" class="itemimage">
+            </ng-container>
+        </div>
+        <div class="itemdescription" *ngFor="let description of singleItem.description">
+            <p class="commonparagraph">{{ description.text }}</p>
+            <ul class="commonlist">
+                <li class="commonlistitem" *ngFor="let bullet of description.bullet">
+                    <p class="commonparagraph">{{ bullet }}</p>
+                </li>
+            </ul>
+        </div>
+
+        <ng-container *ngIf="hasDetails(singleItem) && !disableButton">
+            <div class="itembutton">
+                <a [attr.href]="getRouteDetails(singleItem.id)" class="commonbutton w-inline-block">
+                <div class="commonbuttonbackground"></div>
+                <div class="commonbuttontext">Read More</div>
+                </a>
+            </div>
+        </ng-container>
+    </div>
+</ng-container>

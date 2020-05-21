@@ -1,0 +1,21 @@
+
+<div class="sidebar-column">
+    <app-nav [currentPage]="currentPage" data-collapse="medium" data-animation="over-left" data-duration="400"
+        data-easing="ease-in-out-back" data-easing2="ease-in-out-back" class="navigation-bar w-nav">
+    </app-nav>
+</div>
+
+
+<div class="content" [attr.id]="currentPage">
+
+    <a class="commonbutton w-inline-block" [attr.href]="pdfPath"
+        style="position: fixed; top: 10px; z-index: 1000; opacity: 1;">
+        <div class="commonbuttonbackground"></div>
+        <div class="commonbuttontext">Download</div>
+    </a>
+
+    <pdf-viewer 
+    [attr.data-ix]="'loadmoveup'" [src]="pdfPath" [fit-to-page]="true" [stick-to-page]="true" [original-size]="true"
+    [show-borders]="true"></pdf-viewer>
+
+</div>

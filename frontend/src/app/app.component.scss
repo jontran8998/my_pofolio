@@ -1,0 +1,5 @@
+.content, .content-wrapper, .content-page-left {
+
+    overflow-y: scroll !important; /* has to be scroll, not auto */ 
+    -webkit-overflow-scrolling: touch  !important;
+}

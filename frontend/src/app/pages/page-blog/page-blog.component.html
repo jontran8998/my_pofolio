@@ -1,0 +1,16 @@
+
+<div class="sidebar-column" [attr.id]="currentPage">
+    <app-nav [currentPage]="currentPage" data-collapse="medium" data-animation="over-left" data-duration="400"
+        data-easing="ease-in-out-back" data-easing2="ease-in-out-back" class="navigation-bar w-nav">
+    </app-nav>
+</div>
+
+<div class="content" [attr.id]="currentPage" >
+    <div *ngFor="let blog of blogs" id="section-0-{{ blog.id }}" class="contentsection"
+        [attr.data-ix]="'scrollmoveup'">
+        <h1 class="sectionheading">{{blog.heading}}</h1>
+        <div class="item">
+            <markdown [src]="'assets/db/' + blog.mdFile" ></markdown>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,404 @@
+[
+    {
+        "id": 0,
+        "name": "Summary",
+        "menuName": "title",
+        "items": [
+            {
+                "id": 0,
+                "config": {
+                    "mlWeb": false,
+                    "mlPdf": false,
+                    "devWeb": false,
+                    "devPdf": false,
+                    "techWeb": false,
+                    "techPdf": false
+                },
+                "title": "A problem solver leverages businesses with tech",
+                "description": [
+                    {
+                        "text": "",
+                        "bullet": [
+                            "web/mobile app, database, IoT, embedded systems, Machine Learning, games and UX designs",
+                            "A dreamer with his strong passion for using Data Science and Machine Learning to change the industry",
+                            "A game changer, full-stack developer with his UX-oriented and crossed platform solutions"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "config": {
+                    "mlWeb": false,
+                    "mlPdf": false,
+                    "devWeb": true,
+                    "devPdf": true,
+                    "techWeb": false,
+                    "techPdf": false
+                },
+                "title": "A Web Developer",
+                "description": [
+                    {
+                        "bullet": [
+                            "A fast learner and ability to categorize and automate software development process",
+                            "Thriving in a team environment and work well with others",
+                            "An honor roll Business Information Technology (BIT) student at Red River College with Honor Roll every term"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "config": {
+                    "mlWeb": false,
+                    "mlPdf": false,
+                    "devWeb": false,
+                    "devPdf": false,
+                    "techWeb": true,
+                    "techPdf": true
+                },
+                "title": "A problem solver leverages businesses with tech",
+                "description": [
+                    {
+                        "bullet": [
+                            "An embedded engineer from Vietnam, worked for a startup and a global automotive company",
+                            "Came to Canada to learn more about web and database management, graduated with honours form Red River College with a collections of scholarships and awards ",
+                            "Has been working for few startups and local clients in Winnipeg, majored in Web Development, DevOps, Data Science and Machine Learning",
+                            "Has been been involved in leader and management roles in the past year",
+                            "Is looking for more responsibility in larger organization."
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Work And Experience",
+        "menuName": "organization",
+        "items": [
+            {
+                "id": 0,
+                "title": "Web Developer",
+                "date": "January 2019 – April 2019",
+                "organization": "ACE Project Space",
+                "organizationUrl": "#",
+                "location": "Winnipeg, Manitoba",
+                "description": [
+                    {
+                        "text": "",
+                        "bullet": [
+                            "Built backend services using Typescript, NodeJS, Mongo DB and GraphQL",
+                            "Designed and implementing the schema of the database",
+                            "Helped to deploy the server in a developing environment",
+                            "Collaborated with front-end peers using Angular 7 and a design team",
+                            "Contributed ideas with co-workers following by agile methodology"
+                        ]
+                    }
+                ],
+                "image": "img/logo/RRC.jpg",
+                "config": {
+                    "mlWeb": true,
+                    "mlPdf": true,
+                    "devWeb": true,
+                    "devPdf": true,
+                    "techWeb": true,
+                    "techPdf": false
+                },
+                "details": [
+                    20,
+                    21,
+                    22,
+                    23
+                ]
+            },
+            {
+                "id": 1,
+                "title": "Freelance Web Developer",
+                "date": "March 2020 – Current",
+                "organization": "Self Employed",
+                "organizationUrl": "#",
+                "location": "Winnipeg, Manitoba",
+                "description": [
+                    {
+                        "text": "Built web applications for small businesses.",
+                        "bullet": [
+                            "www.crownnailsandspa.ca",
+                            "www.phammaitailor.netlify.app   "
+                        ]
+                    }
+                ],
+                "image": "img/logo/none.jpg",
+                "config": {
+                    "mlWeb": true,
+                    "mlPdf": false,
+                    "devWeb": true,
+                    "devPdf": false,
+                    "techWeb": true,
+                    "techPdf": false
+                },
+                "details": [
+                    31,
+                    32,
+                    33
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Tech Stack",
+        "menuName": "title",
+        "items": [
+            {
+                "id": 1,
+                "title": "Management Tool",
+                "description": [
+                    {
+                        "bullet": [
+                            "Agile Methodologies",
+                            "Kanban, Scrum"
+                        ]
+                    }
+                ],
+                "config": {
+                    "mlWeb": true,
+                    "mlPdf": true,
+                    "devWeb": true,
+                    "devPdf": true,
+                    "techWeb": true,
+                    "techPdf": true
+                }
+            },
+            {
+                "id": 2,
+                "title": "Server/Network Administration",
+                "description": [
+                    {
+                        "bullet": [
+                            "TCP/IP and the OSI Model",
+                            "Experience Linux environment, using SSH and related tools",
+                            "Configuring routers and switches",
+                            "Configuring DNS, implementing group policies, modifying and troubleshooting MS Window Server"
+                        ]
+                    }
+                ],
+                "config": {
+                    "mlWeb": true,
+                    "mlPdf": true,
+                    "devWeb": true,
+                    "devPdf": true,
+                    "techWeb": true,
+                    "techPdf": true
+                }
+            },
+            {
+                "id": 3,
+                "title": "Database",
+                "description": [
+                    {
+                        "bullet": [
+                            "Relational Database: SQL, MySQL, Oracle/MS SQL, PostgreSQL",
+                            "Non-relational Database: MongoDB",
+                            "XML, JSON"
+
+                        ]
+                    }
+                ],
+                "config": {
+                    "mlWeb": true,
+                    "mlPdf": true,
+                    "devWeb": true,
+                    "devPdf": true,
+                    "techWeb": true,
+                    "techPdf": true
+                }
+            },
+            {
+                "id": 4,
+                "title": "Web Development",
+                "description": [
+                    {
+                        "bullet": [
+                            "HTML, JavaScript, ES6, JQuery, NodeJS, TypeScript, Webpack, Babel",
+                            "React, Redux, Hook, Gatsby, Angular",
+                            "Unit Test on React",
+                            "CSS, SCSS, Sass, Bootstrap, Material Design", 
+                            "Rest API, GraphQL",
+                            "C#, .NET, ASP.NET, Entity Framework, MVC",
+                            "Python, Flask Framework, PyCharm",
+                            "Web services and HTTP protocol",
+                            "Service worker",
+                            "PhpMyAdmin, XAMPP",
+                            "Internet Security: SQL Injection, Cross Site Scripting",
+                            "Git, Git Hub",
+                            "Expertise with macOS, Window and Linux operation system (Ubuntu)",
+                            "Heroku, Firebase, Netlify", 
+                            "Npm, yarn, WSL, PowerShell"
+                        ]
+                    }
+                ],
+                "config": {
+                    "mlWeb": true,
+                    "mlPdf": true,
+                    "devWeb": true,
+                    "devPdf": true,
+                    "techWeb": true,
+                    "techPdf": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Education",
+        "menuName": "title",
+        "items": [
+            {
+                "id": 1,
+                "title": "Bachelor of Finance and Banking",
+                "date": "August 2011 - May 2015",
+                "organization": "University of Economics Ho Chi Minh",
+                "location": "Ho Chi Minh city, Vietnam",
+                "description": [
+                    {
+                        "text": "Accounting, Broad business foundation, Financial Services, Marketing, Human Resource Management and Banking"
+                    }
+                ],
+                "image": "img/logo/UEH.jpg",
+                "config": {
+                    "mlWeb": true,
+                    "mlPdf": true,
+                    "devWeb": true,
+                    "devPdf": true,
+                    "techWeb": true,
+                    "techPdf": true
+                },
+                "details": [
+                    10,
+                    11
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Business Information Technology Diploma",
+                "date": "August 2017 - December 2019",
+                "organization": "Red River College",
+                "location": "Winnipeg, MB, Canada",
+                "description": [
+                    {
+                        "text": "Application Development, Database management, Web Development, Web Security, Technology in Business"
+                    }
+                ],
+                "image": "img/logo/RRC.jpg",
+                "config": {
+                    "mlWeb": true,
+                    "mlPdf": true,
+                    "devWeb": true,
+                    "devPdf": true,
+                    "techWeb": true,
+                    "techPdf": true
+                },
+                "details": [
+                    51,
+                    52,
+                    53,
+                    54,
+                    56,
+                    57,
+                    58
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Awards",
+        "menuName": "title",
+        "items": [
+            {
+                "id": 6,
+                "title": "Honor Role Certificate - All terms",
+                "organization": "Applied Computer Education Department, Red River College",
+                "date": "2017 - 2019",
+                "location": "Winnipeg, MB, Canada",
+                "description": [
+                    {
+                        "text": "GPA above 3.8"
+                    }
+                ],
+                "image": "img/logo/RRC.jpg",
+                "config": {
+                    "mlWeb": true,
+                    "mlPdf": true,
+                    "devWeb": true,
+                    "devPdf": true,
+                    "techWeb": true,
+                    "techPdf": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Volunteer",
+        "menuName": "title",
+        "items": [
+            {
+                "id": 1,
+                "title": "Intercultural Mentorship Program",
+                "date": "October 2017 - November 2017",
+                "organization": "Red River College",
+                "location": "Winnipeg, Manitoba",
+                "description": [
+                    {
+                        "text": "The Intercultural Mentorship Program is coordinated by the Diversity and Intercultural Services at Red River College, and it partners Global Mentors (immigrant and international students) with Local Mentors (Canadian raised students and staff) for intercultural exchange.",
+                        "bullet": [
+                            "Participated in the College-wide leadership program that brings together students from diverse cultural backgrounds for a semester of cultural exchange, support, and friendship",
+                            "Completed all program commitments including an orientation session, 7+ hours of meeting time and completion of a reflection survey",
+                            "Developed enhanced intercultural awareness and sensitivity skills, leadership and time-management skills, and personal/professional growth"
+                        ]
+                    }
+                ],
+                "image": "img/logo/RRC.jpg",
+                "config": {
+                    "mlWeb": true,
+                    "mlPdf": true,
+                    "devWeb": true,
+                    "devPdf": true,
+                    "techWeb": true,
+                    "techPdf": true
+                }
+            },
+            {
+                "id": 2,
+                "title": "Employability Skills Workshop",
+                "date": "March 2020",
+                "organization": "Essential Skills Manitoba",
+                "location": "Winnipeg, Manitoba",
+                "description": [
+                    {
+                        "text": "The course covers the following topics:",
+                        "bullet": [
+                            "Problems Solving in the Workplace",
+                            "Conflict Resolution",
+                            "The Role of Culture in a Workplace",
+                            "Strategies to clarify Workplace Expectations",
+                            "Being an Active Participant in a Respectful Workplace",
+                            "Communicating Effectively: Speaking and Listening"
+                        ]
+                    }
+                ],
+                "image": "img/logo/ESM.jpg",
+                "config": {
+                    "mlWeb": true,
+                    "mlPdf": true,
+                    "devWeb": true,
+                    "devPdf": true,
+                    "techWeb": true,
+                    "techPdf": true
+                }
+            }
+        ]
+    }
+]

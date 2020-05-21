@@ -1,0 +1,210 @@
+{
+    "avatar": "img/avatar.jpg",
+    "name": "Jon Tran",
+    "pdfUrf": "files/jimmy-vo-resume.pdf",
+    "description": [
+        {
+            "text": "Let's see how I can help",
+            "bullet": [
+                "You have have a brilliant ideas for your start-up but you are struggling to find a solution",
+                "You want to improve your business with data but you don't know how",
+                "You need a DevOps to improve your development process",
+                "You want me to be part of your development team"
+            ]
+        }
+    ],
+    "social": {
+        "mlWeb": [
+            {
+                "url": "https://goo.gl/maps/ioDsGZqAqiWgADMp6",
+                "text": "Winnipeg, Manitoba",
+                "icon": "img/icon/address.jpg"
+            },
+            {
+                "url": "tel:+1 (204) 583 7929",
+                "text": "+1 (204) 583 7929",
+                "icon": "img/icon/phone.jpg"
+            },
+            {
+                "url": "mailto:trungt8998@gmail.com",
+                "text": "trungt8998@gmail.com",
+                "icon": "img/icon/email.jpg"
+            },
+            {
+                "url": "#",
+                "text": "jon-tran",
+                "icon": "img/icon/web.jpg"
+            },
+            {
+                "url": "https://www.linkedin.com/in/jon-tran-b7b637133/",
+                "text": "linkedin.com/in/jon-tran",
+                "icon": "img/icon/linkedin.jpg"
+            },
+            {
+                "url": "https://github.com/javie1199",
+                "text": "github.com/javie1199",
+                "icon": "img/icon/github.jpg"
+            }
+        ],
+        "mlPdf": [
+            {
+                "url": "https://goo.gl/maps/ioDsGZqAqiWgADMp6",
+                "text": "Winnipeg, Manitoba",
+                "icon": "img/icon/address.jpg"
+            },
+            {
+                "url": "tel:+1 (204) 583 7929",
+                "text": "+1 (204) 583 7929",
+                "icon": "img/icon/phone.jpg"
+            },
+            {
+                "url": "mailto:trungt8998@gmail.com",
+                "text": "trungt8998@gmail.com",
+                "icon": "img/icon/email.jpg"
+            },
+            {
+                "url": "https://ml.jimmy-vo.space",
+                "text": "ml.jimmy-vo.space",
+                "icon": "img/icon/web.jpg"
+            },
+            {
+                "url": "https://www.linkedin.com/in/jon-tran-b7b637133/",
+                "text": "linkedin.com/in/jon-tran",
+                "icon": "img/icon/linkedin.jpg"
+            },
+            {
+                "url": "https://github.com/javie1199",
+                "text": "github.com/javie1199",
+                "icon": "img/icon/github.jpg"
+            }
+        ],
+        "devWeb": [
+            {
+                "url": "https://goo.gl/maps/ioDsGZqAqiWgADMp6",
+                "text": "Winnipeg, Manitoba",
+                "icon": "img/icon/address.jpg"
+            },
+            {
+                "url": "tel:+1 (204) 583 7929",
+                "text": "+1 (204) 583 7929",
+                "icon": "img/icon/phone.jpg"
+            },
+            {
+                "url": "mailto:trungt8998@gmail.com",
+                "text": "trungt8998@gmail.com",
+                "icon": "img/icon/email.jpg"
+            },
+            {
+                "url": "#",
+                "text": "Jon Tran",
+                "icon": "img/icon/web.jpg"
+            },
+            {
+                "url": "https://www.linkedin.com/in/jon-tran-b7b637133/",
+                "text": "linkedin.com/in/jon-tran",
+                "icon": "img/icon/linkedin.jpg"
+            },
+            {
+                "url": "https://github.com/javie1199",
+                "text": "github.com/javie1199",
+                "icon": "img/icon/github.jpg"
+            }
+        ],
+        "devPdf": [
+            {
+                "url": "https://goo.gl/maps/ioDsGZqAqiWgADMp6",
+                "text": "Winnipeg, Manitoba",
+                "icon": "img/icon/address.jpg"
+            },
+            {
+                "url": "tel:+1 (204) 583 7929",
+                "text": "+1 (204) 583 7929",
+                "icon": "img/icon/phone.jpg"
+            },
+            {
+                "url": "mailto:trungt8998@gmail.com",
+                "text": "trungt8998@gmail.com",
+                "icon": "img/icon/email.jpg"
+            },
+            {
+                "url": "#",
+                "text": "Jon Tran",
+                "icon": "img/icon/web.jpg"
+            },
+            {
+                "url": "https://www.linkedin.com/in/jon-tran-b7b637133/",
+                "text": "linkedin.com/in/jon-tran",
+                "icon": "img/icon/linkedin.jpg"
+            },
+            {
+                "url": "https://github.com/javie1199",
+                "text": "github.com/javie1199",
+                "icon": "img/icon/github.jpg"
+            }
+        ],
+        "techWeb": [
+            {
+                "url": "https://goo.gl/maps/ioDsGZqAqiWgADMp6",
+                "text": "Winnipeg, Manitoba",
+                "icon": "img/icon/address.jpg"
+            },
+            {
+                "url": "tel:+1 (204) 583 7929",
+                "text": "+1 (204) 583 7929",
+                "icon": "img/icon/phone.jpg"
+            },
+            {
+                "url": "mailto:trungt8998@gmail.com",
+                "text": "trungt8998@gmail.com",
+                "icon": "img/icon/email.jpg"
+            },
+            {
+                "url": "https://tech.jimmy-vo.space",
+                "text": "tech.jimmy-vo.space",
+                "icon": "img/icon/web.jpg"
+            },
+            {
+                "url": "https://www.linkedin.com/in/jon-tran-b7b637133/",
+                "text": "linkedin.com/in/jon-tran",
+                "icon": "img/icon/linkedin.jpg"
+            },
+            {
+                "url": "https://github.com/javie1199",
+                "text": "github.com/javie1199",
+                "icon": "img/icon/github.jpg"
+            }
+        ],
+        "techPdf": [
+            {
+                "url": "https://goo.gl/maps/ioDsGZqAqiWgADMp6",
+                "text": "Winnipeg, Manitoba",
+                "icon": "img/icon/address.jpg"
+            },
+            {
+                "url": "tel:+1 (204) 583 7929",
+                "text": "+1 (204) 583 7929",
+                "icon": "img/icon/phone.jpg"
+            },
+            {
+                "url": "mailto:trungt8998@gmail.com",
+                "text": "trungt8998@gmail.com",
+                "icon": "img/icon/email.jpg"
+            },
+            {
+                "url": "https://tech.jimmy-vo.space",
+                "text": "tech.jimmy-vo.space",
+                "icon": "img/icon/web.jpg"
+            },
+            {
+                "url": "https://www.linkedin.com/in/jon-tran-b7b637133/",
+                "text": "linkedin.com/in/jon-tran",
+                "icon": "img/icon/linkedin.jpg"
+            },
+            {
+                "url": "https://github.com/javie1199",
+                "text": "github.com/javie1199",
+                "icon": "img/icon/github.jpg"
+            }
+        ]
+    }
+}

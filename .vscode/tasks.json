@@ -1,0 +1,62 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "frontend-start",
+            "type": "npm",
+            "script": "start",
+            "path": "frontend/",
+            "isBackground": true,
+            "presentation": {
+                "reveal": "never",
+                "clear": true
+            }
+        },
+        {
+            "label": "generator-start",
+            "type": "npm",
+            "script": "start",
+            "path": "generator/",
+            "group": "build",
+            "presentation": {
+                "reveal": "never",
+                "clear": true
+            }
+        },
+        {
+            "label": "generator-dev",
+            "type": "npm",
+            "script": "gen-dev",
+            "path": "generator/",
+            "group": "build",
+            "presentation": {
+                "reveal": "never",
+                "clear": true
+            },
+        },
+        {
+            "label": "generator-tech",
+            "type": "npm",
+            "script": "gen-tech",
+            "path": "generator/",
+            "group": "build",
+            "presentation": {
+                "reveal": "never",
+                "clear": true
+            },
+        },
+        {
+            "label": "backend-build",
+            "type": "npm",
+            "script": "build",
+            "path": "backend/",
+            "group": "build",
+            "presentation": {
+                "reveal": "never",
+                "clear": true
+            }
+        }
+    ]
+}

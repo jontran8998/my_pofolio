@@ -1,0 +1,16 @@
+
+<div class="sidebar-column" >
+  <app-nav [currentPage]="currentPage" data-collapse="medium" data-animation="over-left" data-duration="400" data-easing="ease-in-out-back" data-easing2="ease-in-out-back" class="navigation-bar w-nav">
+  </app-nav>
+</div>
+
+<div class="content" [attr.id]="currentPage">
+
+  <div class="contentsection" [attr.data-ix]="'loadmoveup'">
+    <app-contact-info></app-contact-info>
+  </div>
+
+  <div class="contentsection" [attr.data-ix]="'scrollmoveup'">
+    <app-email-form></app-email-form>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Front-end",
+            "type": "chrome",
+            "request": "launch",
+            "preLaunchTask": "frontend-start",
+            "url": "http://localhost:4200",
+            "webRoot": "${workspaceFolder}/frontend"
+        },
+        {
+            "name": "Back-end",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "backend-build",
+            "cwd": "${workspaceFolder}/backend",
+            "program": "${workspaceFolder}/backend/dist/server.js",
+            "sourceMaps": true,
+            "trace": "all",
+            "outFiles": [
+                "${workspaceFolder}/backend/dist/**/*.js"
+            ]
+        }
+    ]
+}

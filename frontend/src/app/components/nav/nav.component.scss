@@ -1,0 +1,22 @@
+.navlink2.force-highlight, .navlink3.force-highlight, .navlink4.force-highlight{
+  text-shadow: 2px -2px 20px #edeff2 !important;
+  color: #ebebeb !important;
+  display: block !important;  
+}
+
+
+.commonbutton.force-highlight {
+  width: auto;
+  height: 40px;
+  max-height: 40px;
+  max-width: none;
+  min-height: 40px;
+  min-width: auto;
+  margin-top: 0px;
+  border: 2px solid #efefef;
+  border-radius: 10px;
+  background-color: #333;
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}

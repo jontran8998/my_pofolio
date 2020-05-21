@@ -1,0 +1,16 @@
+
+<div class="sidebar-column">
+    
+  <app-nav [currentPage]="currentPage" data-collapse="medium" data-animation="over-left" data-duration="400" data-easing="ease-in-out-back" data-easing2="ease-in-out-back" class="navigation-bar w-nav">
+    
+  </app-nav>
+</div>
+
+<div class="content" [attr.id]="currentPage">
+  <ng-container *ngFor="let section of sections ">
+    <div [attr.id]="getRefIdSection(section.id)" class="contentsection" [attr.data-ix]="section.animation">
+      <h1 class="sectionheading">{{ section.name }}</h1>
+      <app-section-item [items]="section.items" [sectionId]="section.id"></app-section-item>
+    </div>
+  </ng-container>
+</div>

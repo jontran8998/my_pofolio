@@ -1,0 +1,24 @@
+<h1 class="sectionheading">Get in touch</h1>
+<div class="socialwrapper">
+
+
+    <div>
+        <div class="linkwrapper" *ngFor="let item of social">
+            <a href="{{ item.url }}" class="sociallinkwrapper w-inline-block">
+                <img src="assets/db/{{ item.icon }}" width="25" alt="" class="navsocialimage">
+                <div class="sociallink">{{ item.text }}</div>
+            </a>
+        </div>
+    </div>
+
+    <div id="w-node-7dba7003a747-5768921d">
+        <div class="itemdescription" *ngFor="let description of item.description">
+            <p class="commonparagraph">{{ description.text }}</p>
+            <ul class="commonlist">
+                <li class="commonlistitem" *ngFor="let bullet of description.bullet">
+                    <p class="commonparagraph">{{ bullet }}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

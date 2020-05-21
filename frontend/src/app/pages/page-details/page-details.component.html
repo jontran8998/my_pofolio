@@ -1,0 +1,21 @@
+
+<div class="sidebar-column">
+    <app-nav [currentPage]="currentPage" data-collapse="medium" data-animation="over-left" data-duration="400"
+        data-easing="ease-in-out-back" data-easing2="ease-in-out-back" class="navigation-bar w-nav">
+    </app-nav>
+</div>
+
+<div class="content" [attr.id]="currentPage">
+
+    <div id="section-0-{{ sectionItem.id }}" class="contentsection" [attr.data-ix]="'loadmoveup'">
+        <h1 class="sectionheading">Summary</h1>
+        <app-section-item [items]="[sectionItem]" [sectionId]="0" [disableButton]="true"></app-section-item>
+    </div>
+    <div *ngFor="let blog of getBlogs(sectionItem.details)" id="section-0-{{ sectionItem.id }}" class="contentsection"
+        [attr.data-ix]="'scrollmoveup'">
+        <h1 class="sectionheading">{{blog.heading}}</h1>
+        <div class="item">
+            <markdown [src]="'assets/db/' + blog.mdFile" ></markdown>
+        </div>
+    </div>
+</div>

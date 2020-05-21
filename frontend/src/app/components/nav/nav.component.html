@@ -1,0 +1,55 @@
+<div class="menu-button w-nav-button">
+    <div class="icon w-icon-nav-menu"></div>
+</div>
+
+
+
+
+<nav role="navigation" class="navigation-menu w-nav-menu">
+
+    <div class="navmenuwrapper">
+        <h1 id="NavHeading" class="navheading w-node-6f9e40bd8cbd-40bd8cb9">{{ name }}</h1>
+
+        <img src="assets/db/{{ avatar }}" width="189" id="Avatar" alt=""  class="avatar w-node-6f9e40bd8cc0-40bd8cb9">
+        <app-nav-social-media id="NavSocialWrapper" class="navsocialwrapper w-node-6f9e40bd8ccb-40bd8cb9"></app-nav-social-media>
+        <div id="NavPages" class="w-layout-grid navpages w-node-2536bb91b6e9-40bd8cb9">
+            <a href="profile#profile" class="commonbutton w-inline-block ">
+                <div class="commonbuttonbackground" *ngIf="currentPage !== 'profile'"></div>
+                <div class="commonbuttontext">Profile</div>
+            </a>
+            <!-- <a href="blogs#blogs" class="commonbutton w-inline-block">
+                <div class="commonbuttonbackground" *ngIf="currentPage !== 'blogs'"></div>
+                <div class="commonbuttontext">Blogs</div>
+            </a> -->
+            <a href="contact#contact" class="commonbutton w-inline-block">
+                <div class="commonbuttonbackground" *ngIf="currentPage !== 'contact'"></div>
+                <div class="commonbuttontext">Contact</div>
+            </a>
+        </div>
+
+        <div id="NavLinkWrapper"  class="navlinkwrapper w-node-44f091387f7c-40bd8cb9">
+            <ng-container *ngFor="let section of sections ">
+
+                <a [attr.href]="getRouteSection(section.id)"
+                    [attr.class]="forceHighlightSection(section.id) + ' navlink2 w-nav-link'">{{ section.name }}</a>
+
+                <ng-container *ngFor="let item of section.items">
+                    <a [attr.href]="getRouteItem(section.id, item.id)"
+                        [attr.class]="forceHighlightItem(section.id, item.id) + ' navlink3 w-nav-link'">{{ item[section.menuName]  }}</a>
+                    <ng-container *ngFor="let detail of item.details ">
+                        <a [attr.href]="getRouteItemDetail(section.id, item.id, detail.id)"
+                            class="navlink4 w-dropdown-link">{{ detail.heading }}</a>
+                    </ng-container>
+                </ng-container>
+            </ng-container>
+        </div>
+        <div id="DownloadDiv" class="w-node-acd425cfca50-40bd8cb9" >
+            <a [attr.href]="'resume-preview'" class="commonbutton w-inline-block">
+            <!-- <a [attr.href]="getPdfLink()" class="commonbutton w-inline-block"> -->
+                <div class="commonbuttonbackground" ></div>
+                <div class="commonbuttontext">Download Resume</div>
+            </a>
+        </div>
+    </div>
+
+</nav>

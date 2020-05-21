@@ -1,0 +1,24 @@
+<div class="sidebar-column">
+    <app-nav [currentPage]="currentPage" data-collapse="medium" data-animation="over-left" data-duration="400"
+        data-easing="ease-in-out-back" data-easing2="ease-in-out-back" class="navigation-bar w-nav">
+    </app-nav>
+</div>
+
+<div class="content" [attr.id]="currentPage">
+    <div class="contentsection" [attr.data-ix]="'scrollmoveup'">
+        <h1 class="sectionheading">Blogs</h1>
+        <div class="item" *ngFor="let section of sections">
+            <div *ngFor="let item of section.items">
+                <a [attr.href]="getItemRoute(section.id, item.id)" class="itemtittlelink w-inline-block">
+                    <h1 class="itemtittle">{{ item.title }}</h1>
+                </a>
+                
+            <ul class="commonlist">
+                <li class="commonlistitem"  *ngFor="let blog of getBlogs(item.details)">
+                    <a href="blog/{{blog.id}}" class="itemcompany when-link">{{ blog.heading }}</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</div>

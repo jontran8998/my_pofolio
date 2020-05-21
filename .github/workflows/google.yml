@@ -1,0 +1,93 @@
+name: Build and Deploy to Cloudrun
+
+on:
+  push:
+    branches: 
+      - master
+      
+env:
+  SERVICE_NGINX_TECH: tech
+  SERVICE_NGINX_DEV: dev
+  SERVICE_BACKEND: backend
+  IMAGE_NGINX_TECH: ${{ secrets.GKE_REGISTRY_HOSTNAME }}/${{ secrets.GKE_PROJECT }}/tech:${{ github.sha }}
+  IMAGE_NGINX_DEV: ${{ secrets.GKE_REGISTRY_HOSTNAME }}/${{ secrets.GKE_PROJECT }}/dev:${{ github.sha }}
+  IMAGE_BACKEND: ${{ secrets.GKE_REGISTRY_HOSTNAME }}/${{ secrets.GKE_PROJECT }}/backend:${{ github.sha }}
+  GKE_ZONE: us-central1
+  GKE_PROJECT: ${{ secrets.GKE_PROJECT }}
+  GKE_EMAIL: ${{ secrets.GKE_EMAIL }}
+  GITHUB_SHA: ${{ github.sha }}
+
+jobs:
+  setup-build-publish-deploy:
+    name: Setup, Build, Publish, and Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      
+    # setup account with: Cloud Run Admin, Cloud Build Editor, Service Account User, Editor, Cloud Run Service Agent (cat *.json  | base64)
+    - name: Setup Gcloud
+      uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      with:
+        version: 'latest'
+        service_account_email: ${{ secrets.GKE_EMAIL }}
+        service_account_key: ${{ secrets.GKE_KEY }}
+
+    - name: Connect Gcloud
+      run: |
+        gcloud auth configure-docker
+        gcloud config set project $GKE_PROJECT
+
+    - name: Build
+      run: |
+        docker-compose -f docker-compose.yml build
+        
+    - name: Deploy
+      run: |
+        if [[ "$(docker images -q $IMAGE_NGINX_TECH 2> /dev/null)" != "" ]]; then
+          docker push $IMAGE_NGINX_TECH
+
+          gcloud run deploy $SERVICE_NGINX_TECH \
+            --image $IMAGE_NGINX_TECH \
+            --region $GKE_ZONE \
+            --port 80 \
+            --platform managed \
+            --allow-unauthenticated \
+            --service-account $GKE_EMAIL \
+            --max-instances 1
+        else
+          echo "IMAGE_NGINX_TECH not found"
+        fi
+
+        if [[ "$(docker images -q $IMAGE_NGINX_DEV 2> /dev/null)" != "" ]]; then
+          docker push $IMAGE_NGINX_DEV
+
+          gcloud run deploy $SERVICE_NGINX_DEV \
+            --image $IMAGE_NGINX_DEV \
+            --region $GKE_ZONE \
+            --port 80 \
+            --platform managed \
+            --allow-unauthenticated \
+            --service-account $GKE_EMAIL \
+            --max-instances 1
+        else
+          echo "IMAGE_NGINX_DEV not found"
+        fi
+        
+        if [[ "$(docker images -q $IMAGE_BACKEND 2> /dev/null)" != "" ]]; then
+          docker push $IMAGE_BACKEND
+
+          env=$(cat ./backend/.env | sed 's/#.*/,/g'|  xargs);
+
+          gcloud run deploy $SERVICE_BACKEND \
+            --image $IMAGE_BACKEND \
+            --region $GKE_ZONE \
+            --port 80 \
+            --platform managed \
+            --allow-unauthenticated \
+            --service-account $GKE_EMAIL  \
+            --max-instances 1 \
+            --set-env-vars "${env// /, }"
+        else
+          echo "SERVICE_BACKEND not found"
+        fi
