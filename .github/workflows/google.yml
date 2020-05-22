@@ -20,7 +20,7 @@ env:
 jobs:
   setup-build-publish-deploy:
     name: Setup, Build, Publish, and Deploy
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -40,7 +40,6 @@ jobs:
 
     - name: Build
       run: |
-        sudo apt-get install docker-ce=18.06.1~ce~3-0~raspbian
         docker-compose -f docker-compose.yml build
         
         
