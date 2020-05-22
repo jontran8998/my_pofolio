@@ -13,6 +13,7 @@ env:
   IMAGE_NGINX_DEV: ${{ secrets.GKE_REGISTRY_HOSTNAME }}/${{ secrets.GKE_PROJECT }}/dev:${{ github.sha }}
   IMAGE_BACKEND: ${{ secrets.GKE_REGISTRY_HOSTNAME }}/${{ secrets.GKE_PROJECT }}/backend:${{ github.sha }}
   GKE_ZONE: us-central1
+  GKE_REGISTRY_HOSTNAME: ${{secrets.GKE_REGISTRY_HOSTNAME}}
   GKE_PROJECT: ${{ secrets.GKE_PROJECT }}
   GKE_EMAIL: ${{ secrets.GKE_EMAIL }}
   GITHUB_SHA: ${{ github.sha }}
